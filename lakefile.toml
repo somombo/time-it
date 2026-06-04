@@ -1,5 +1,10 @@
 name = "time-it"
 version = "0.1.0"
+description = "A monadic timing library for Lean 4, providing programmatic execution durations."
+keywords = ["timing", "benchmark", "duration", "time", "performance"]
+homepage = "https://github.com/somombo/time-it"
+license = "Apache-2.0"
+reservoir = true
 defaultTargets = ["TimeIt"]
 testDriver = "TimeIt"
 
