@@ -1,0 +1,7 @@
+name = "time-it"
+version = "0.1.0"
+defaultTargets = ["TimeIt"]
+testDriver = "TimeIt"
+
+[[lean_lib]]
+name = "TimeIt"
