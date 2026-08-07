@@ -60,17 +60,3 @@ let (duration, result) ← IO.timeFn (fun n => n + 1) 41
 -/
 @[inline]
 public def timeFn (f : α → β) (x : α) : IO (Duration ×  β) := timeAx (f <$> pure x)
-
-/-- info: true -/
-#guard_msgs(info) in
-#eval do
-  let (duration, _) ← timeFn (dbgSleep · fun()=>()) 1
-  let x := duration.toNanoseconds.toInt.toNat.toFloat/1000_000 |>.round
-  return  1 <= x && x <= 2
-
-/-- info: true -/
-#guard_msgs(info) in
-#eval do
-  let (duration, _) ← timeAx (IO.sleep 1)
-  let x := duration.toNanoseconds.toInt.toNat.toFloat/1000_000 |>.round
-  return  1 <= x && x <= 2

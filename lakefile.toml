@@ -6,7 +6,11 @@ homepage = "https://github.com/somombo/time-it"
 license = "Apache-2.0"
 reservoir = true
 defaultTargets = ["TimeIt"]
-testDriver = "TimeIt"
+testDriver = "Test"
 
 [[lean_lib]]
 name = "TimeIt"
+
+[[lean_lib]]
+name = "Test"
+srcDir = "TimeIt"
