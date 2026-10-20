@@ -1,5 +1,5 @@
 name = "time-it"
-version = "0.2.1"
+version = "0.2.2"
 description = "A monadic timing library for Lean 4, providing programmatic execution durations."
 keywords = ["timing", "benchmark", "duration", "time", "performance"]
 homepage = "https://github.com/somombo/time-it"
